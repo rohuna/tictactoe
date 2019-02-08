@@ -75,7 +75,7 @@ class GameWindow {
         } else if (board.checkWin('X')) {
             StdDraw.text(0.5, 0.1, "Player X Wins!");
         } else if (board.checkWin('O')) {
-            StdDraw.text(0.1, 0.1, "Player O Wins!");
+            StdDraw.text(0.5, 0.1, "Player O Wins!");
         }
 
         StdDraw.show();
