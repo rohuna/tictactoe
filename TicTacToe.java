@@ -70,12 +70,13 @@ class GameWindow {
         StdDraw.text(0.9, 0.1, "New Game");
 
         StdDraw.setFont(new Font("SansSerif", Font.PLAIN, 60));
-        if (board.isTie()) {
-            StdDraw.text(0.5, 0.1, "Tie!");
-        } else if (board.checkWin('X')) {
+        if (board.checkWin('X')) {
             StdDraw.text(0.5, 0.1, "Player X Wins!");
         } else if (board.checkWin('O')) {
             StdDraw.text(0.5, 0.1, "Player O Wins!");
+        }
+        else if (board.isTie()) {
+            StdDraw.text(0.5, 0.1, "Tie!");
         }
 
         StdDraw.show();
